@@ -7,18 +7,26 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="envelope-container" id="envelopeContainer">
+    <div class="name-form-container" id="nameFormContainer">
+        <h2>¿Cuál es tu nombre?</h2>
+        <input type="text" id="userName" placeholder="Escribe tu nombre">
+        <button onclick="saveName()">Guardar</button>
+    </div>
+
+    <div class="envelope-container" id="envelopeContainer" style="display: none;">
         <div class="envelope" id="envelope">
             <div class="flap"></div>
             <div class="message">Presiona para abrir</div>
         </div>
     </div>
-    <div class="coupon-container" id="couponContainer">
+
+    <div class="coupon-container" id="couponContainer" style="display: none;">
         <div class="coupon">
-            Cupón válido para un café☕ o un helado 🍦 🙈
+            <span id="couponMessage">Cupón válido para un café☕ o un helado 🍦 🙈</span>
         </div>
         <button class="reset-button" onclick="resetEnvelope()">Cerrar</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
